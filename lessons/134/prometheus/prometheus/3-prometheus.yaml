@@ -35,14 +35,3 @@ spec:
   #        requests:
   #          storage: 20Gi
   #          storageClass: local-path
-    podAntiAffinity:
-      preferredDuringSchedulingIgnoredDuringExecution:
-      - podAffinityTerm:
-          labelSelector:
-            matchExpressions:
-            - key: app.kubernetes.io/name
-              operator: In
-              values:
-              - prometheus
-          topologyKey: kubernetes.io/hostname
-        weight: 100
