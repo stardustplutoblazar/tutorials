@@ -14,7 +14,7 @@ spec:
     honorLabels: true
     tlsConfig:
       caFile: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
-      # insecureSkipVerify: true
+      insecureSkipVerify: true
     bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
   jobLabel: k8s-app
   namespaceSelector:
